@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chethana Rupasinghe | Cloud Operations & Site Reliability Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f6;--surface:#fff;--ink:#12263a;--muted:#51647a;--line:#cbd7e0;--accent:#0b7c86;--accent-soft:#d6eef0;--warm:#d98a1f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c29;--surface:#16293a;--ink:#e8f0f6;--muted:#9fb3c6;--line:#2a4156;--accent:#4cc3cd;--accent-soft:#17414a;--warm:#f0b050}}
+:root[data-theme="dark"]{--bg:#0f1c29;--surface:#16293a;--ink:#e8f0f6;--muted:#9fb3c6;--line:#2a4156;--accent:#4cc3cd;--accent-soft:#17414a;--warm:#f0b050}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:72px 0 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+
+.hero{padding:64px 0 8px;display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+.role{font:700 1.25rem "Bricolage Grotesque",sans-serif;color:var(--accent);margin:14px 0 18px}
+.hero p{max-width:52ch;color:var(--muted);margin:0 0 24px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.stairs{width:100%;height:auto;display:block}
+.stairs text{font-family:"IBM Plex Sans",sans-serif}
+
+.timeline{position:relative;margin-left:8px;padding-left:34px;border-left:3px solid var(--accent)}
+.role-item{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}
+.role-item::before{content:"";position:absolute;left:-46px;top:30px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:4px solid var(--accent)}
+.role-item.now::before{background:var(--warm);border-color:var(--warm)}
+.when{color:var(--muted);font-size:.95rem;margin-bottom:6px}
+.role-item h3{font-size:1.5rem;font-weight:700}
+.co{color:var(--accent);font-weight:500;margin:2px 0 12px}
+.role-item ul{margin:0 0 14px;padding-left:20px}
+.role-item li{margin-bottom:6px;max-width:75ch}
+.promo{background:var(--accent-soft);border-radius:8px;padding:8px 12px;font-size:.95rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:.85rem;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.group h3{font-size:1.15rem;margin-bottom:12px;color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--accent-soft);padding:4px 12px;border-radius:6px;font-size:.92rem}
+.group.core{grid-column:1/-1}
+.group.core .chip{font-weight:500;font-size:1rem;padding:6px 14px}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p,.card li{color:var(--muted);margin:0 0 8px}
+.card ul{padding-left:18px;margin:0}
+.card strong{color:var(--ink)}
+footer{padding:72px 0 48px}
+.contact{background:var(--ink);color:var(--bg);border-radius:16px;padding:36px}
+.contact h2{margin-bottom:8px}
+.contact a{color:var(--bg);font-weight:500}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.timeline{padding-left:24px}.role-item::before{left:-36px}section{padding-top:56px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div>
+    <h1>Chethana Rupasinghe</h1>
+    <div class="role">Cloud Operations &amp; Site Reliability Engineer</div>
+    <p>Nearly three years keeping enterprise cloud platforms reliable across Azure, AWS, Kubernetes and Linux. I started as an undergraduate trainee and was promoted to Associate Site Reliability Engineer on performance.</p>
+    <div class="cta">
+      <a class="btn primary" href="#career">See my career growth</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <svg class="stairs" viewBox="0 0 440 330" role="img" aria-label="Career steps: Trainee in 2023, Associate Site Reliability Engineer in 2024, Cloud Operations Engineer in 2026">
+    <rect x="10" y="230" width="130" height="80" rx="6" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+    <rect x="150" y="150" width="130" height="160" rx="6" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+    <rect x="290" y="70" width="130" height="240" rx="6" fill="var(--accent)"/>
+    <g fill="var(--ink)" font-size="14" font-weight="500">
+      <text x="22" y="258">Jun 2023</text><text x="22" y="280" font-size="13" fill="var(--muted)">Undergraduate</text><text x="22" y="297" font-size="13" fill="var(--muted)">Trainee</text>
+      <text x="162" y="178">Jan 2024</text><text x="162" y="200" font-size="13" fill="var(--muted)">Associate Site</text><text x="162" y="217" font-size="13" fill="var(--muted)">Reliability Engineer</text>
+      <text x="302" y="98" fill="var(--bg)">Feb 2026</text><text x="302" y="120" font-size="13" fill="var(--bg)">Cloud Operations</text><text x="302" y="137" font-size="13" fill="var(--bg)">Engineer</text>
+    </g>
+    <path d="M75 222 L75 190 L215 140 L215 108 L355 60" fill="none" stroke="var(--warm)" stroke-width="3" stroke-dasharray="6 6"/>
+    <circle cx="355" cy="60" r="7" fill="var(--warm)"/>
+  </svg>
+</header>
+
+<section id="career">
+  <h2>Career growth</h2>
+  <p class="lead">From supporting senior engineers to leading incident response, then into hands-on cloud operations. Read from the bottom up for the story.</p>
+  <div class="timeline">
+    <article class="role-item now">
+      <div class="when">Feb 2026 – Mar 2026</div>
+      <h3>Cloud Operations Engineer</h3>
+      <div class="co">IGT1 Outsourcing Lanka (Pvt) Ltd, Colombo</div>
+      <ul>
+        <li>Ran enterprise Azure environments (Web Apps, App Service Plans, SQL Elastic Pools) supporting live production workloads.</li>
+        <li>Configured and secured VNets, NSGs, Load Balancers and access restrictions to keep platforms segmented.</li>
+        <li>Carried out backup, disaster recovery and cross-region restores with Azure Recovery Services Vault.</li>
+        <li>Diagnosed SQL, Redis caching and search-index issues through Application Insights, and supported CI/CD pipelines and 24x7 operations within SLA.</li>
+      </ul>
+      <div class="tags"><span class="tag">Azure</span><span class="tag">Azure SQL</span><span class="tag">Networking</span><span class="tag">Disaster recovery</span><span class="tag">CI/CD</span></div>
+    </article>
+    <article class="role-item">
+      <div class="when">Jan 2024 – Feb 2026</div>
+      <h3>Associate Site Reliability Engineer</h3>
+      <div class="co">IFS R&amp;D International (Pvt) Ltd, Colombo</div>
+      <div class="promo">Promoted from trainee based on performance.</div>
+      <ul>
+        <li>Monitored Azure, AWS, Kubernetes and Linux platforms against SLA targets for reliability and availability.</li>
+        <li>Resolved production incidents with Grafana, Kibana, Prometheus and Azure Monitor, using root cause analysis to reduce MTTR.</li>
+        <li>Led 24x7 support and coordinated high-priority incidents across distributed, microservices-based systems.</li>
+        <li>Wrote runbooks, postmortems and knowledge articles that standardised troubleshooting and cut repeat incidents.</li>
+        <li>Managed incident, problem and change records in ServiceNow (ITIL), and automated recurring checks with Python and PowerShell.</li>
+      </ul>
+      <div class="tags"><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">Prometheus</span><span class="tag">ServiceNow</span><span class="tag">Python</span><span class="tag">PowerShell</span></div>
+    </article>
+    <article class="role-item">
+      <div class="when">Jun 2023 – Dec 2023</div>
+      <h3>Undergraduate Trainee, Elite Expert Team</h3>
+      <div class="co">IFS R&amp;D International (Pvt) Ltd, Colombo</div>
+      <ul>
+        <li>Designed and built Power BI dashboards and reports for the team using operational work data, turning raw data into clear, visual insights for day-to-day tracking and decision-making.</li>
+        <li>Supported senior engineers on enterprise cloud issues, production incidents and root cause analysis.</li>
+        <li>Worked with global engineering teams on customer-facing technical problems.</li>
+        <li>Wrote documentation, knowledge articles and troubleshooting guides that standardised team procedures.</li>
+        <li>Managed assigned tasks independently, which led to the promotion to Associate SRE.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="lead">Built up through production support first, with infrastructure, automation and data skills layered on top.</p>
+  <div class="skills">
+    <div class="group core">
+      <h3>Core strengths</h3>
+      <div class="chips"><span class="chip">Site reliability engineering</span><span class="chip">24x7 incident response</span><span class="chip">Root cause analysis</span><span class="chip">Microsoft Azure</span><span class="chip">Disaster recovery</span><span class="chip">SLA management</span><span class="chip">ITIL</span></div>
+    </div>
+    <div class="group"><h3>Cloud</h3><div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">AWS</span><span class="chip">Web Apps</span><span class="chip">App Service Plans</span><span class="chip">Azure SQL &amp; Elastic Pools</span><span class="chip">Recovery Services Vault</span></div></div>
+    <div class="group"><h3>Networking &amp; systems</h3><div class="chips"><span class="chip">VNets</span><span class="chip">NSGs</span><span class="chip">Load Balancers</span><span class="chip">Kubernetes</span><span class="chip">Linux</span><span class="chip">Redis</span></div></div>
+    <div class="group"><h3>Monitoring &amp; observability</h3><div class="chips"><span class="chip">Grafana</span><span class="chip">Prometheus</span><span class="chip">Kibana</span><span class="chip">Azure Monitor</span><span class="chip">Application Insights</span></div></div>
+    <div class="group"><h3>Automation</h3><div class="chips"><span class="chip">Terraform</span><span class="chip">Ansible</span><span class="chip">Python</span><span class="chip">PowerShell</span><span class="chip">CI/CD pipelines</span></div></div>
+    <div class="group"><h3>Service management</h3><div class="chips"><span class="chip">ServiceNow</span><span class="chip">ITIL</span><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Runbooks &amp; postmortems</span></div></div>
+    <div class="group"><h3>Data &amp; reporting</h3><div class="chips"><span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Dashboards</span><span class="chip">Statistical analysis</span><span class="chip">Query optimisation</span></div></div>
+  </div>
+</section>
+
+<section id="foundation">
+  <h2>Education &amp; credentials</h2>
+  <p class="lead">A First Class degree and Microsoft certifications back the hands-on experience.</p>
+  <div class="cols">
+    <div class="card"><h3>BSc in Applied Data Science and Communication</h3><p><strong>First Class Honours<br>GPA 3.72 / 4.00</strong></p><p>General Sir John Kotelawala Defence University, 2021 – 2024</p></div>
+    <div class="card"><h3>Microsoft certifications</h3><ul><li>Power BI Data Analyst Associate (PL-300)</li><li>Azure Data Fundamentals (DP-900)</li><li>Azure AI Fundamentals (AI-900)</li></ul></div>
+    <div class="card"><h3>Courses</h3><ul><li>Python for Beginners, University of Moratuwa</li><li>AI and Machine Learning for Business, Sungkyunkwan University</li><li>LFD103: A Beginner's Guide to Linux Kernel Development - The Linux Foundation</li><li>LFS162: Introduction to DevOps and Site Reliability Engineering - The Linux Foundation</li></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Projects &amp; research</h2>
+  <p class="lead">Data work and published research from my degree years.</p>
+  <div class="cols">
+    <div class="card"><h3>MAS Fabrics reporting prototype</h3><p>Power BI prototype with interactive dashboards for business performance monitoring and management reporting.</p></div>
+    <div class="card"><h3>Colombo air quality dashboard</h3><p>Reporting dashboard that visualises air quality indicators and environmental trends.</p></div>
+    <div class="card"><h3>Greater Manchester EPC dashboard</h3><p>Power BI analysis of energy performance certificate data, presenting sustainability insights.</p></div>
+    <div class="card"><h3>Published at IEEE ICIIS 2023</h3><p>Co-authored a conceptual mobile app connecting Sri Lankan farmers with retailers, presented at the University of Peradeniya.</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="contact">
+    <h2>Let's talk</h2>
+    <p>I'm based in Kalutara, Sri Lanka, and work in English and Sinhala.</p>
+    <p><a href="mailto:chethanabuddini256@gmail.com">Email - chethanabuddini256@gmail.com</a><br><a>Contact - +94715821804 </a><br><a href="https://www.linkedin.com/in/chethana-rupasinghe-333420209/">Linkedin - https://www.linkedin.com/in/chethana-rupasinghe-333420209/</a></p>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
